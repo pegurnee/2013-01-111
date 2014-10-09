@@ -1,0 +1,39 @@
+// Using our own class Student in a demo
+
+import java.util.Scanner;
+
+public class CarTripper
+{
+    public static void main(String [ ] args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+
+        // Create two objects in class CarTrip:
+        CarTrip toAkron = new CarTrip();
+        CarTrip toBoise = new CarTrip();
+
+        // install data in toAkron (but we forgot numDays)
+        toAkron.start = "Ypsilanti";
+        toAkron.destination = "Akron";
+        toAkron.numMiles = 114;
+        toAkron.gallonsGas = 4.2;
+        toAkron.foodExpense = 32.5;
+        toAkron.hotelExpense = 0.0;
+        toAkron.showCarTrip();          // call method to display
+        
+        // call method that "lives in" toAkron
+        System.out.println("Miles per gallon: " + toAkron.mpg());
+
+        toBoise.start = "Ypsilanti";
+        toBoise.destination = "Boise, ID";
+        toBoise.numMiles = 1800;
+        toBoise.numDays = 4;
+        toBoise.gallonsGas = 54.4;
+        toBoise.foodExpense = 112.50;
+        toBoise.hotelExpense = 274.30;
+        toBoise.showCarTrip();
+        System.out.println("Miles per gallon: " + toBoise.mpg());
+
+    }
+}
+

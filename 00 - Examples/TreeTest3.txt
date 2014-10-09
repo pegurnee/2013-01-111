@@ -1,0 +1,45 @@
+// test out the Tree class
+
+import java.util.Scanner;
+
+public class TreeTest
+{
+    public static void main(String [ ] args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+        
+        Tree t = new Tree("e F C G");    // "G" will be ignored
+
+        t.setName("Hackberry");
+        t.setFamily("Elm");
+        t.setSciName("Celtis occidentalis");
+        t.setLowHeight(5);
+        t.setHighHeight(80);
+        t.setShortLeaf(3);
+        t.setLongLeaf(4);
+        t.setBark("gray, warty");
+        t.setHardness("soft");
+        t.setCrown("vase-like");
+
+        t.show();
+
+        Tree s = new Tree();
+
+        s.setName("Sugar Maple");
+        s.setFamily("Maple");
+        s.setSciName("Acer saccharum");
+        s.setLowHeight(75);
+        s.setHighHeight(100);
+        s.setShortLeaf(4);
+        s.setLongLeaf(6);
+        s.setRegions("D E");
+        s.setBark("gray with plates, possibly flaky");
+        s.setHardness("medium");
+        s.setCrown("broad and full");
+
+        s.show();
+        System.out.println("The " + s.getName() + " grows in " + s.numRegions() + " regions.");
+
+    }
+}
+

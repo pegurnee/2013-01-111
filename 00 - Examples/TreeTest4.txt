@@ -1,0 +1,35 @@
+// test out the Tree class
+
+import java.util.Scanner;
+import java.io.*;            // for file operations
+
+public class TreeTest
+{
+    public static void main(String [ ] args)
+    {
+        String fName = "treeData.txt";
+
+        //Scanner keyboard = new Scanner(System.in);
+
+        Tree s = new Tree();
+        try
+        {
+            Scanner inStream = new Scanner(new FileInputStream(fName));
+            s.readFromStream(inStream);
+            inStream.close();
+        }
+        catch (Exception e)  
+        { 
+            System.out.println("Error in file operations.");
+            System.exit(0);   
+        }
+
+        s.show();
+        System.out.println("\nThe " + s.getName() + " grows in " + s.numRegions() + " regions.\n");
+        
+        System.out.println("------- Testing 'toString' method:");
+        System.out.println(s.toString());
+
+    }
+}
+

@@ -1,0 +1,30 @@
+// Using our own class Student in a demo
+
+import java.util.Scanner;
+
+public class StudentDemo
+{
+
+    public static void main(String [ ] args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+
+        Student s = new Student();   // create instance of Student
+        s.lastName = "Zhang";        // install data
+        s.firstName = "Li";
+        s.creditHours = 121;
+        s.qualityPoints = 441.03;
+
+        System.out.println(s.gpa()); // call method in object s
+        
+        // r will be a second object in class Student
+        Student r = new Student(); 
+        r.lastName = "Dempster";
+        r.firstName = "Andrew";
+        r.creditHours = 145;
+        r.qualityPoints = 509.5;
+
+        System.out.println(r.gpa()); 
+    }
+}
+

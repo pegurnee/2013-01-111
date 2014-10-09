@@ -1,0 +1,62 @@
+// A first attempt at a Tree class, with many "quick and dirty" aspects
+
+public class Tree
+{
+    public String name;      // common name
+    public String sciName;   // scientific name
+    public String family;    // common name of tree family
+    
+    // regions of the U.S. in which this tree grows
+    public boolean regionA, regionB, regionC, regionD, regionE, regionF;
+    
+    public int lowHeight, highHeight;   // height range in feet
+    public int shortLeaf, longLeaf;     // leaf length range in inches
+    public String bark;                 // bark description
+    public String crown;                // crown description
+    public String hardness;             // hardness of the wood: soft, medium, hard
+    public String environment;          // typical environment description
+
+    // Number of U.S. regions in which tree grows
+    public int numRegions()
+    {
+        int num = 0;
+        if (regionA) num++;
+        if (regionB) num++;        
+        if (regionC) num++;
+        if (regionD) num++;
+        if (regionE) num++;        
+        if (regionF) num++;
+        return num;
+    }
+
+    // String that lists regions by letter
+    public String regionString()
+    {
+        String r = "";
+        if (regionA) r = r + "A ";
+        if (regionB) r = r + "B ";        
+        if (regionC) r = r + "C ";
+        if (regionD) r = r + "D ";
+        if (regionE) r = r + "E ";        
+        if (regionF) r = r + "F";
+        return r.trim();
+    }
+    
+    // Display most fields with labels on screen
+    public void show ()
+    {
+        System.out.println("=======================");
+        System.out.println("Common name: " + name);
+        System.out.println("Family: " + family);
+        System.out.println("Scientific name: " + sciName);
+        System.out.println("Regions: " + regionString());
+        System.out.println("Leaves are " + shortLeaf + " to " + 
+            longLeaf + " inches long");
+        System.out.println("Height is " + lowHeight + " to " + 
+            highHeight + " feet");
+        System.out.println("The bark is " + bark);            
+        System.out.println("The crown will appear " + crown);            
+        System.out.println("This tree's wood is " + hardness);            
+        System.out.println("=======================");
+    }
+}

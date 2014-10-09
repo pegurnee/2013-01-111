@@ -1,0 +1,104 @@
+// Misc utilities, implemented as methods
+
+import java.util.Scanner;
+
+public class UtilMethods
+{
+    private static int readInt(String prompt, Scanner s)
+    { 
+        System.out.print(prompt);
+        int j = s.nextInt();
+        s.nextLine();
+        return j;
+    }
+
+    private static double readDouble(String prompt, Scanner s)
+    { 
+        System.out.print(prompt);
+        double x = s.nextDouble();
+        s.nextLine();
+        return x;
+    }
+
+    private static void dashedLine()  // line of dashes to screen
+    {
+        for (int h = 1; h <= 50; h++)
+        { System.out.print('-'); }
+        System.out.println();
+    }
+
+    private static double max(double a, double b, double c)
+    {
+        if (a >= b && a >= c)
+        { return a; }
+        else if (b >= c)
+        { return b; }
+        else
+        { return c; }
+    }
+
+    private static double sphereVolume(double radius)
+    { return 4.0 / 3.0 * Math.PI * Math.pow(radius, 3);
+    }
+
+    // round a double to an int
+    private static int round(double x)
+    { return (int) (x + 0.5);          // will round up
+    }
+
+    // compute total pay assuming time-and-half over 40 hours
+    private static double payOvertime(double hours, double rate)
+    { 
+        double overtime = 0.0;
+        if (hours > 40.0)
+        {
+            overtime = hours - 40.0;
+        }
+        return hours * rate + overtime * rate * 1.5;
+    }
+
+    // Create String to display time on 24-hr clock as 12-hr time
+    //   time24 is 0000 .. 2400 (a single int)
+    private static String clock24To12(int time24)
+    {
+        // Catch illegal time, including 60 minutes or more
+        if (time24 < 0 || time24 > 2400 || time24 % 100 >= 60)
+        {
+            return "Not a time";
+        }
+
+        String amPm = " A.M.";
+        if (time24 > 1200)
+        { 
+            amPm = " P.M."; 
+            time24 = time24 - 1200;
+        }
+        else if (time24 == 1200)        // exactly noon
+        { amPm = " noon"; }
+
+        int hours = time24 / 100;       // int division, no remainder
+        if (hours == 0) { hours = 12; } // between midnight and 1 am
+
+        String padding = "";               // for leading zero for mins
+        int mins = time24 % 100;           // remainder of time24 / 100
+        if (mins < 10) { padding = "0"; }  // leading zero for 0..9 mins
+
+        return hours + ":" + padding + mins + amPm;
+    }
+
+    public static void main(String [ ] args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+
+        // main program is just for various tests if the methods
+
+        //int count;
+        //count = readInt("Enter the count: ", keyboard);
+
+        //System.out.println(clock24To12(0)); 
+        //System.out.println(max(3,5,1)); 
+        dashedLine();
+
+    }
+}
+
