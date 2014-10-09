@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=fMenu
+comment1.target=Product[][][]\ loadMenu(java.lang.String)
+comment1.text=\n\ Loads\ a\ menu\ from\ a\ given\ .txt\ file\n\ \n\ @param\ fMenu\ the\ .txt\ file\ to\ load\ the\ menu\ information\ from\n\ @return\ the\ information\ from\ the\ .txt\ file\ in\ proper\ form\ for\ the\ menu\n
+comment2.params=user
+comment2.target=void\ browse(Customer)
+comment2.text=\n\ allows\ the\ user\ to\ browse\ a\ menu\ and\ select\ an\ item\ from\ the\ menu\n\ \n\ @param\ user\ the\ specific\ user\ that\ will\ be\ browsing\ and\ selecting\ items\n
+comment3.params=user
+comment3.target=void\ viewCart(Customer)
+comment3.text=\n\ displays\ the\ items\ currently\ in\ the\ users\ cart\n\ \n\ @param\ user\ the\ user\ who's\ cart\ will\ be\ viewed\n
+comment4.params=user
+comment4.target=void\ checkOut(Customer)
+comment4.text=\n\ displays\ each\ item\ in\ the\ cart,\ the\ price\ for\ each\ item\ individually\ and\ their\ subtotal,\ and\ the\ total\ price\ of\ the\ bill\n\ \n\ @param\ user\ the\ specific\ user\ who's\ purchases\ will\ be\ finalized\n
+comment5.params=user
+comment5.target=void\ exit(Customer)
+comment5.text=\n\ offers\ one\ last\ chance\ to\ not\ quit\ the\ program\n\ \n\ @param\ user\ the\ user\ who\ is\ exiting\ the\ account,\ used\ only\ to\ display\ user\ name.\n
+numComments=6

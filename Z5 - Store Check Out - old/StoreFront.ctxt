@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=fMenu
+comment1.target=Product[]\ loadMenu(java.lang.String)
+comment2.params=user
+comment2.target=void\ browse(Customer)
+comment3.params=user
+comment3.target=void\ viewCart(Customer)
+comment4.params=user
+comment4.target=void\ checkOut(Customer)
+comment5.params=user
+comment5.target=void\ exit(Customer)
+numComments=6

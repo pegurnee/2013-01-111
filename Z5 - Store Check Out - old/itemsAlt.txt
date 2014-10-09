@@ -1,0 +1,30 @@
+18 2 6
+Movies
+Television
+Science Fiction
+Fantasy
+Animated
+British Television
+Procedural Cop-Drama
+Monster-of-the-Week Fantasy
+Star Wars: The Empire Strikes Back
+Inception
+Minority Report
+The Hobbit: An Unexpected Journey
+X-Men: First Class
+The Avengers
+Princess Mononoke
+Despicable Me
+How to Train Your Dragon
+Sherlock
+Doctor Who
+Misfits
+Law & Order
+Lie To Me
+White Collar
+Supernatural
+Fringe
+Heroes
+8 8 8 8 8 8 8 8 8 6 6 6 6 6 6 6 6 6
+6.95 12.95 6.95 16.50 13.99 14.99 4.98 10.99 11.97 21.96 29.45 15.96 42.98 26.95 23.98 21.95 15.96 20.98
+true true true true true true true true true true true true true true true true true true 

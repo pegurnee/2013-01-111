@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=User()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ User\n
+comment1.params=inputName\ inputDiff
+comment1.target=User(java.lang.String,\ int)
+comment2.params=b
+comment2.target=void\ completeQuestion(boolean)
+comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
+comment3.params=
+comment3.target=double\ getPercent()
+numComments=4
