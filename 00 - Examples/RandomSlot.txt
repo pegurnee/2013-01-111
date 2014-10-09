@@ -1,0 +1,46 @@
+// Random numbers: slot machine with three wheels
+
+import java.util.Scanner;
+import java.util.Random;    // required
+
+public class RandomSlot
+{
+    public static void main(String [ ] args)
+    {
+        Random generator = new Random();   // create object in class Random
+                                           //   is "seeded" by system clock
+                                           
+        final int NCLICKS = 8;    // number of coices on each wheel                                           
+        int w1, w2, w3;           // the "wheels" (could use an array)
+
+        int nTwoMatch = 0, nThreeMatch = 0;
+        int nSpins = 100;         // number of times we pull the lever
+        
+        for (int k = 1; k <= nSpins; k++)
+        {
+            w1 = generator.nextInt(NCLICKS);    // get 0 through NCLICKS-1
+            w2 = generator.nextInt(NCLICKS);
+            w3 = generator.nextInt(NCLICKS);
+            System.out.println(w1 + " " + w2 + " " + w3);
+            
+            if (w1 == w2 && w2 == w3)
+            {
+                System.out.println("All match!");
+                nThreeMatch++;
+            }
+            else if (w1 == w2 || w1 == w3 || w2 == w3)
+            {
+                System.out.println("Two match!");
+                nTwoMatch++;
+            }
+            else
+            {
+                System.out.println("Sorry, no match");
+            }
+        }
+        
+        System.out.println("On " + nSpins + " spins, " +
+                           "three match on " + nThreeMatch +
+                           " and two match on " + nTwoMatch);
+    }
+}

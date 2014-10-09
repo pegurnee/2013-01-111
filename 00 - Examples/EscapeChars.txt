@@ -1,0 +1,21 @@
+// Soecial characters in Strings
+
+public class EscapeChars
+{
+    public static void main(String [ ] args)
+    {       
+        // to get a quote mark in the output, use \"
+        System.out.println("Strings are in quotes, e.g., \"abc\".");
+        
+        // the \n escape will produce a new line
+        System.out.println("This is on one line, and \nthis is on another.");
+     
+        // to get a backslash in the output, use \\
+        System.out.println("The backslash (\\) is useful.");
+
+        // The backslash can be used in String literals in assignments.
+        String quote = "Quoth the raven, \"Nevermore.\"";
+        System.out.println(quote);
+        
+    }
+}

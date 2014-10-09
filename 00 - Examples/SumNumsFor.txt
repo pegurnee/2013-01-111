@@ -1,0 +1,32 @@
+// Add up series of doubles read from keyboard
+
+import java.util.Scanner;
+
+public class SumNumsFor
+{
+    public static void main(String [ ] args)
+    {
+        int numValues;        // how many to read and add
+        double value;         // to hold each new value read
+        double sum = 0.0;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("Enter number of values: ");
+        numValues = keyboard.nextInt(); 
+        keyboard.nextLine();
+        
+        // for i equals 1 through numValues, read and add values
+        
+        for (int i = 1; i <= numValues; i++)   // i++ means i = i + 1
+        {
+            System.out.print("Enter a value: ");
+            value = keyboard.nextDouble();
+            keyboard.nextLine();
+            
+            sum = sum + value;         // add to previous sum
+        }
+        
+        System.out.println("The sum is " + sum);
+    }
+}

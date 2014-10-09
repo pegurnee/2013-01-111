@@ -1,0 +1,38 @@
+// Write square roots of 0..100 in a text file
+
+import java.io.*;            // for file operations
+
+public class FileOutput
+{
+  public static void main (String [ ] args)
+    {        
+      double squareRoot;
+      
+      String fName = "roots.txt";  // file name
+
+      // Put all file operations and computing on data from file
+      //  inside "try"
+
+      try
+        { 
+            // PrintWriter writes text characters, as to screen
+            PrintWriter outStream = new PrintWriter(new FileOutputStream(fName));
+            
+            for (double x = 0.0; x <= 100.0; x++)   // int works, too
+              {
+                 squareRoot = Math.sqrt(x);
+                 outStream.println(x + ", " + squareRoot);
+              }
+          
+            outStream.close();     // needed to save data written to file
+
+        }  // end of try
+      
+      catch (Exception e)  // if exception thrown from "try"
+        { 
+            System.out.println("Error in file operations.");
+            System.exit(0);    // terminate program
+        } 
+  
+    }
+}

@@ -1,0 +1,41 @@
+// Read height and width of rectangle from file, compute area
+
+import java.util.Scanner;
+import java.io.*;            // for file operations
+
+public class FileInput
+{
+  public static void main (String [ ] args)
+    {        
+      double height, width, area;
+      
+      String fName = "dimensions.txt";  // file name
+
+      // Put all file operations and computing on data from file
+      //  inside "try"
+
+      try
+        { 
+            // scan input from file instead of keyboard
+            Scanner inStream = new Scanner(new FileInputStream(fName));
+            
+            height = inStream.nextDouble();   // read height from file
+            width = inStream.nextDouble();    // read width
+            
+            inStream.close();                 // tidy up
+            
+            area = height * width;
+          
+            // display value in last position
+            System.out.println("Area: " + area);
+            
+        }  // end of try
+      
+      catch (Exception e)  // if exception thrown from "try"
+        { 
+            System.out.println("Error in file operations.");
+            System.exit(0);    // terminate program
+        } 
+  
+    }
+}

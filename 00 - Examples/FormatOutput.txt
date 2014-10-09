@@ -1,0 +1,51 @@
+// Controlling how output looks
+
+public class FormatOutput
+{
+    public static void main(String [ ] args)
+    {
+        double num = 50.0, denom = 3.0, ans;
+        ans = num / denom;
+        
+        System.out.println("Answer 1 = " + ans);    // unformatted
+
+        // Use printf, not println and use comma, not plus sign
+        System.out.printf("Answer 2 = %8.2f", ans); // 8 spaces, 2 to right of decimal
+        System.out.println();                       // go to next line
+        
+        System.out.printf("Answer 3 = %12.6f", ans); // 12 spaces, 6 to right of decimal
+        System.out.println();                   
+        
+        System.out.printf("Answer 4 = %20.2f", ans); // 20 spaces, 2 to right of decimal
+        System.out.println();
+
+        // left-justify number in the 20-space field (use minus sign)
+        System.out.printf("Answer 5 = %-20.2f", ans); // 20 spaces, 2 to right of decimal
+        System.out.println();
+        
+        System.out.printf("Answer 6 = %.2f", ans); // free-format except fractional part
+        System.out.println();        
+        
+        // What if too few spaces allotted?
+        System.out.printf("Answer 7 = %3.2f", ans); // 3 spaces, 2 to right of decimal
+        System.out.println();
+        
+        // formatting integer output (d means decimal, or base 10, integer)
+        int age = 23;
+        System.out.printf("age = %5d", age);       // 5 spaces, right-justified
+        System.out.println();
+        
+         // formatting string output
+        String name = "Bill";
+        System.out.printf("Hello, %s, please swipe your card.", name);
+        System.out.println();
+        
+        // specifying string field width
+        System.out.printf("Hello, %12s, please swipe your card.", name);
+        System.out.println();        
+
+        char initial = 'B';
+        System.out.printf("%c is the initial.", initial);
+        System.out.println();      
+    }
+}

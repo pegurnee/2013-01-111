@@ -1,0 +1,43 @@
+// Read the count and the array values from user
+
+import java.util.Scanner;
+
+public class Arrays2
+{
+  public static void main (String [ ] args)
+    {        
+      final int MAXGAMES = 25;   // assume can have no more than 25
+      
+      // create array to hold max no. values
+      int[ ] hitsByGame = new int[MAXGAMES];
+      
+      int numGames;              // actual number of games
+      
+      Scanner keyboard = new Scanner(System.in);
+      
+      // user enters number of games played
+      System.out.print("How many games? ");
+      numGames = keyboard.nextInt();
+      keyboard.nextLine();
+      
+      // read values from user, put in array
+      
+      for (int j = 0; j < numGames; j++)
+        {
+          // user thinks of first game as no. 1, not no. 0
+          System.out.print("Game " + (j+1) + ": ");
+          hitsByGame[j] = keyboard.nextInt();
+          keyboard.nextLine();
+        }
+      
+      // display value in last position
+      System.out.println("Hits in last game: " + hitsByGame[numGames-1]);
+      
+      System.out.println("Number of hits for each game:");
+      
+      for (int k = 0; k < numGames; k++)
+        {
+          System.out.println((k+1) + ": " + hitsByGame[k]);
+        }  
+    }
+}

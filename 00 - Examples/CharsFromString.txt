@@ -1,0 +1,30 @@
+// Get a String from the user and display each character separately
+
+import java.util.Scanner;
+
+public class CharsFromString
+{
+    public static void main(String [ ] args)
+    {
+        String userString;
+        int stringLen;       // to hold length of user's input String
+        char c;              // to hold each char from String in succession
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("Enter a text String: ");
+        userString = keyboard.nextLine();
+        
+        stringLen = userString.length();    // get length of user's String
+        
+        System.out.println("Here's your String, disassembled:");        
+               
+        // Character positions in String are 0 through length-1
+               
+        for (int j = 0; j < stringLen; j++)
+        {
+            c = userString.charAt(j);   // extract char at current position
+            System.out.println(c);
+        }
+    }
+}

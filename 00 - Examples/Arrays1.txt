@@ -1,0 +1,24 @@
+// Arrays allow to you store a sequence of values under one name
+
+public class Arrays1
+{
+  public static void main (String [ ] args)
+    {  
+      // create array, install values (indexes are 0 thru 6)
+      int [ ] hitsByGame = {1, 3, 0, 0, 2, 1, 0};
+      
+      // declare constant for length of array (not a variable)
+      final int numGames = 7;   // "final" means can't change
+      
+      // access value at specific index
+      System.out.println("Hits in last game: " + hitsByGame[6]);
+      
+      System.out.println("Number of hits for each game:");
+      
+      for (int k = 0; k < numGames; k++)
+      {
+          // user expects first game to be no. 1, not no. 0
+          System.out.println((k+1) + ": " + hitsByGame[k]);
+      }  
+    }
+}

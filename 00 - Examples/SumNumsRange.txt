@@ -1,0 +1,45 @@
+// Add up series of doubles read from keyboard
+//  Check values for legal range
+
+import java.util.Scanner;
+
+public class SumNumsRange
+{
+    public static void main(String [ ] args)
+    {
+        int count = 0;        // counter for loop
+        int numValues;        // how many to read and add
+        double value;         // to hold each new value read
+        double sum = 0.0;
+        double min = 10.0, max = 100.0;  // legal range
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("Enter number of values: ");
+        numValues = keyboard.nextInt(); 
+        keyboard.nextLine();
+        
+        while (count < numValues) 
+        {
+            System.out.print("Enter value: ");
+            value = keyboard.nextDouble();
+            keyboard.nextLine();
+            
+            if (value < min)  // illegal values not counted or added
+            {
+                System.out.println("Value less than min of " + min);
+            }
+            else if (value > max)
+            {
+                System.out.println("Value greater than max of " + max);
+            }
+            else
+            {
+                sum = sum + value;         // add to previous sum
+                count = count + 1;         // increase count by 1
+            }
+        }
+        
+        System.out.println("The sum is " + sum);
+    }
+}

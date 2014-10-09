@@ -1,0 +1,33 @@
+// Add up series of doubles read from keyboard
+
+import java.util.Scanner;
+
+public class SumNums
+{
+    public static void main(String [ ] args)
+    {
+        int count = 0;        // counter for loop
+        int numValues;        // how many to read and add
+        double value;         // to hold each new value read
+        double sum = 0.0;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("Enter number of values: ");
+        numValues = keyboard.nextInt(); 
+        keyboard.nextLine();
+        
+        while (count < numValues) 
+        {
+            System.out.print("Enter a value: ");
+            value = keyboard.nextDouble();
+            keyboard.nextLine();
+            
+            sum = sum + value;         // add to previous sum
+
+            count = count + 1;         // increase count by 1
+        }
+        
+        System.out.println("The sum is " + sum);
+    }
+}

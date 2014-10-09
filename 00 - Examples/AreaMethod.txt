@@ -1,0 +1,25 @@
+// Method that lives in a class definition
+
+public class AreaMethod
+{
+
+    // private: can only be accessed from within this class
+    // static: method is associated with class, not objects in class
+    // double: the type of the value returned by the method
+    // width and height are "arguments" to the method, values "passed" by caller
+
+    private static double rectArea(double width, double height)
+    { 
+        return width * height;  // width and height are local names for the values
+    }
+
+    public static void main(String [ ] args)
+    {
+        double h = 5.6, w = 8.7, area;
+
+        area = rectArea(w, h);
+
+        System.out.println("Area is " + area);
+    }
+}
+

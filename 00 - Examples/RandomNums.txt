@@ -1,0 +1,32 @@
+// Random numbers: coin flip
+
+import java.util.Scanner;
+import java.util.Random;    // required
+
+public class RandomNums
+{
+    public static void main(String [ ] args)
+    {
+        Random generator = new Random();   // create object in class Random
+                                           //   is "seeded" by system clock
+        int flip;                          // holds result of each flip
+        int nHeads = 0, nTails = 0;
+        
+        for (int k = 1; k <= 100; k++)
+        {
+            flip = generator.nextInt(2);  // randomly get a 0 or a 1
+            
+            if (flip == 1)
+            {
+                System.out.println(k + " h");
+                nHeads++;
+            }
+            else
+            {
+                System.out.println(k + " t");
+                nTails++;
+            }
+        }
+        System.out.println("Heads: " + nHeads + ", Tails: " + nTails);
+    }
+}

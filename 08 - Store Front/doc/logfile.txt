@@ -1,0 +1,44 @@
+Class documentation
+<---- javadoc command: ---->
+/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Volumes/HP v100w/COSC 111/08 - Store Front
+-d
+/Volumes/HP v100w/COSC 111/08 - Store Front/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Volumes/HP v100w/COSC 111/08 - Store Front/Product.java
+<---- end of javadoc command ---->
+Loading source file /Volumes/HP v100w/COSC 111/08 - Store Front/Product.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_43
+Building tree for all the packages and classes...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/Product.html...
+/Volumes/HP v100w/COSC 111/08 - Store Front/Product.java:241: warning - @param argument "t" is not a parameter name.
+/Volumes/HP v100w/COSC 111/08 - Store Front/Product.java:252: warning - @param argument "t" is not a parameter name.
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/package-frame.html...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/package-summary.html...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/allclasses-frame.html...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/allclasses-noframe.html...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/index.html...
+Generating /Volumes/HP v100w/COSC 111/08 - Store Front/doc/stylesheet.css...
+2 warnings

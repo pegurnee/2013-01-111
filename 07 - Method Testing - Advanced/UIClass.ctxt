@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ turnOn()
+comment1.params=question\ options
+comment1.target=int\ enterOptions(java.lang.String,\ java.lang.String[])
+comment10.params=ram
+comment10.target=void\ enterScience(RAMClass)
+comment11.params=ram
+comment11.target=void\ enterScholarship(RAMClass)
+comment2.params=prompt
+comment2.target=java.lang.String\ enterString(java.lang.String)
+comment3.params=prompt
+comment3.target=int\ enterInt(java.lang.String)
+comment4.params=error
+comment4.target=void\ errorMessage(java.lang.String)
+comment5.params=ram\ total
+comment5.target=void\ displayTotal(RAMClass,\ int)
+comment6.params=ram\ nYes
+comment6.target=void\ enterUser(RAMClass,\ boolean)
+comment7.params=ram\ fYes
+comment7.target=void\ anotherStage(RAMClass,\ boolean)
+comment8.params=ram\ fYes
+comment8.target=void\ enterStage(RAMClass,\ boolean)
+comment9.params=ram
+comment9.target=void\ enterHours(RAMClass)
+numComments=12

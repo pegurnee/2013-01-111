@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=theMessageText\ theTitleText
+comment0.target=void\ showMessage(java.lang.String,\ java.lang.String)
+comment0.text=\n\ A\ pop-up\ message\ box\n\ \n\ @param\ theMessageText\ the\ text\ displayed\ in\ the\ message\ box\n\ @param\ theTitleText\ the\ text\ displayed\ in\ the\ title\ of\ the\ message\ box\n
+comment1.params=thePrompt\ theTitleText
+comment1.target=java.lang.String\ userInputString(java.lang.String,\ java.lang.String)
+comment1.text=\n\ A\ pop-up\ message\ box\ allowing\ string\ input\n\ \n\ @param\ thePrompt\ the\ text\ displayed\ in\ the\ message\ box\ to\ induce\ response\n\ @param\ theTitleText\ the\ text\ displayed\ in\ the\ title\ of\ the\ message\ box\n\ @return\ c\ the\ user\ inputted\ string\n
+comment2.params=thePrompt\ theTitleText
+comment2.target=double\ userInputDouble(java.lang.String,\ java.lang.String)
+comment2.text=\n\ A\ pop-up\ message\ box\ allowing\ numeric\ input\n\ \n\ @param\ thePrompt\ the\ text\ displayed\ in\ the\ message\ box\ to\ induce\ response\n\ @param\ theTitleText\ the\ text\ displayed\ in\ the\ title\ of\ the\ message\ box\n\ @return\ c\ the\ user\ inputted\ value\ as\ double\n
+comment3.params=thePrompt\ theTitleText
+comment3.target=int\ userInputInt(java.lang.String,\ java.lang.String)
+comment3.text=\n\ A\ pop-up\ message\ box\ allowing\ numeric\ input\n\ \n\ @param\ thePrompt\ the\ text\ displayed\ in\ the\ message\ box\ to\ induce\ response\n\ @param\ theTitleText\ the\ text\ displayed\ in\ the\ title\ of\ the\ message\ box\n\ @return\ c\ the\ user\ inputted\ value\ as\ int\n
+comment4.params=thePrompt\ theTitleText
+comment4.target=boolean\ userYesOrNo(java.lang.String,\ java.lang.String)
+comment4.text=\n\ A\ pop-up\ message\ box\ asking\ yes\ or\ no\n\ \n\ @param\ thePrompt\ the\ text\ displayed\ in\ the\ message\ box\ to\ induce\ response\n\ @param\ theTitleText\ the\ text\ displayed\ in\ the\ title\ of\ the\ message\ box\n\ @return\ c\ the\ user\ yes\ or\ no\ returned\ as\ true\ or\ false\n
+numComments=5
