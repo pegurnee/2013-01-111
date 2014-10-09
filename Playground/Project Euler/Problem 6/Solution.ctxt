@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=max
+comment1.target=long\ sumSquare(int)
+comment2.params=max
+comment2.target=long\ squareSum(int)
+numComments=3

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=goal
+comment1.target=void\ generate(java.lang.String)
+comment2.params=goal\ start\ finish
+comment2.target=int[]\ generateSeed(java.lang.String,\ int,\ int)
+comment3.params=i\ base
+comment3.target=java.lang.String\ randomString(int,\ char)
+numComments=4
