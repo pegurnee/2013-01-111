@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ run()
+comment1.params=players
+comment1.target=boolean\ anyAlive(Summoner[])
+numComments=2

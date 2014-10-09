@@ -1,0 +1,29 @@
+27
+00 - Saying
+01 - Title
+02 - Location
+03 - Minions
+04 - Defenders
+05 - Gatherers
+06 - Recruiters
+07 - defending verb - present active tense
+08 - gathering verb - present active tense
+09 - recruiting verb - present active tense
+10 - defending verb - past tense
+11 - gathering verb - past tense
+12 - recruiting verb - past tense
+13 - defending verb
+14 - gathering verb
+15 - recruiting verb
+16 - Gold
+17 - enemy1
+18 - enemy2
+19 - enemy3
+20 - enemy4
+21 - dragon - announcing combat
+22 - dragon name
+23 - defending aid
+24 - gathering aid
+25 - recruiting aid
+26 - land space
+XXX - End of File - XXX

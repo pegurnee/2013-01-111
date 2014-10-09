@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.6
+-classpath
+/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles
+-d
+/Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/Applications/BlueJ/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/Summoner.java
+<---- end of javadoc command ---->
+Loading source file /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/Summoner.java...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_43
+Building tree for all the packages and classes...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/Summoner.html...
+/Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/Summoner.java:43: warning - @return tag cannot be used in method with void return type.
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/package-frame.html...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/package-summary.html...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/allclasses-frame.html...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/allclasses-noframe.html...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/index.html...
+Generating /Volumes/HW_UPDATE/COSC 111/P2 - Summoner Battles/doc/stylesheet.css...
+1 warning

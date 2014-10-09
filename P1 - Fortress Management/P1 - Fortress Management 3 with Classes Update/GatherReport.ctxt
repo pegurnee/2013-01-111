@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=theUser
+comment0.target=void\ run(CurrentUser)
+comment1.params=theUser
+comment1.target=int\ produced(CurrentUser)
+numComments=2

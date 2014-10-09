@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=theUser
+comment0.target=void\ run(CurrentUser)
+comment1.params=a\ b\ c\ d\ theUser
+comment1.target=void\ initialValues(int,\ int,\ int,\ int,\ CurrentUser)
+comment2.params=
+comment2.target=void\ multiplayer()
+numComments=3

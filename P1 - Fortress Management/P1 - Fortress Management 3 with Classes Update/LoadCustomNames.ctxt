@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=theUser
+comment0.target=void\ run(CurrentUser)
+comment1.params=theUser\ theCustomNames
+comment1.target=void\ initialize(CurrentUser,\ java.lang.String[])
+numComments=2

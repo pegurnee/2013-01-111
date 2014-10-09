@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=theUser
+comment0.target=void\ run(CurrentUser)
+comment1.params=theUser
+comment1.target=int\ produced(CurrentUser)
+comment2.params=theUser
+comment2.target=boolean\ openPop(CurrentUser)
+numComments=3

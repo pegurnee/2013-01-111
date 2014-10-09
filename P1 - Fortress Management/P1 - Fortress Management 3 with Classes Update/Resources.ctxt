@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=newName
+comment0.target=void\ setName(java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=
+comment2.target=int\ getValue()
+comment3.params=
+comment3.target=int\ getMax()
+comment4.params=newMax
+comment4.target=void\ setMax(int)
+comment5.params=
+comment5.target=int\ getOld()
+comment6.params=yesterdayValue
+comment6.target=void\ setOld(int)
+comment7.params=setValue
+comment7.target=void\ setValue(int)
+comment8.params=minusValue
+comment8.target=void\ minusValue(int)
+comment9.params=addValue
+comment9.target=void\ addValue(int)
+numComments=10
