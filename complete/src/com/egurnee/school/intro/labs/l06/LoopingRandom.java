@@ -1,4 +1,4 @@
-package com.egurnee.school.intro.l6;
+package com.egurnee.school.intro.labs.l06;
 
 /* This program exists to show the basics of Random numbers and user exiting loops
  * All coding provided by Eddie Gurnee
