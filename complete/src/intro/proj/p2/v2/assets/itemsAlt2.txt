@@ -1,0 +1,24 @@
+12 2 3 2
+Cell Phone
+iOS
+iPhone 5
+iPhone 4S
+Android
+Samsung Galaxy S3
+ASUS Google Nexus 4
+Other
+Windows Phone 8X by HTC
+BlackBerry Z10
+Tablet
+iOS
+iPad 4
+iPad mini
+Windows
+Microsoft Surface Pro
+Acer Iconia Tab W510
+Android
+Samsung Galaxy Tab 2
+ASUS Google Nexus 7
+6 6 6 6 6 6 6 6 6 6 6 6 
+499.99 499.99 449.99 369.99 99.99 149.99 599.99 299.99 999.99 599.99 179.99 299.99
+true true true true true true true true true true true true 
