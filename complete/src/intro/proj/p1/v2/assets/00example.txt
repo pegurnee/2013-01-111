@@ -1,0 +1,17 @@
+00 - Greeting
+01 - Title
+02 - Location
+03 - Minions
+04 - Defenders
+05 - Gatherers
+06 - Recruiters
+07 - recruiting term - present active tense
+08 - Gold
+09 - enemy1
+10 - enemy2
+11 - enemy3
+12 - enemy4
+13 - dragon - announcing combat
+14 - dragon name
+15 - recruiting term - past tense
+16 - recruiting verb
