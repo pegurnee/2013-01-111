@@ -1,4 +1,4 @@
-package intro.labs.l07.silly;
+package intro.labs.l07.v2;
 
 /* Contains the methods that does the functions
  * 

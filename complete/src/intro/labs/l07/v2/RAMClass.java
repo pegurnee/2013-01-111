@@ -1,4 +1,4 @@
-package intro.labs.l07.silly;
+package intro.labs.l07.v2;
 
 /* The RAM class, holds data for that is in use
  * 

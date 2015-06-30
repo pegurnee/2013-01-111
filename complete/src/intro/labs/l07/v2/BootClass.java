@@ -1,4 +1,4 @@
-package intro.labs.l07.silly;
+package intro.labs.l07.v2;
 
 /* Gotta load the program before doing anything else!
  * 

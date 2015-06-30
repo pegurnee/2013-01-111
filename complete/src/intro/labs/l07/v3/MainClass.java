@@ -1,4 +1,4 @@
-package intro.labs.l07.ugly;
+package intro.labs.l07.v3;
 import java.util.Scanner; // imports scanner class
 /* Purpose of this program is to quickly calculate tuition based on a few factors
  * All coding provided by Eddie Gurnee
