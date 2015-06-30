@@ -1,0 +1,15 @@
+// Student class
+
+public class Student  // a category of objects
+{
+    // Each object in the class gets their own copy of these
+    public String lastName, firstName;
+    public int creditHours;
+    public double qualityPoints;
+
+    // method that exists insode every object in class Student
+    public double gpa()
+    {
+        return qualityPoints / creditHours;  // refer to this object's data
+    }
+}

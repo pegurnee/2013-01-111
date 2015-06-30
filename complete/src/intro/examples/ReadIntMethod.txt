@@ -1,0 +1,26 @@
+// Method that prompts user for an int and reads it from keyboard
+
+import java.util.Scanner;
+
+public class ReadIntMethod
+{
+    private static int readInt(String prompt, Scanner s)
+    { 
+        System.out.print(prompt);
+        int j = s.nextInt();
+        s.nextLine();
+        return j;
+    }
+
+    public static void main(String [ ] args)
+    {
+        Scanner keyboard = new Scanner(System.in);
+        
+        int count;
+
+        count = readInt("Enter the count: ", keyboard);
+
+        System.out.println("The count read was " + count);
+    }
+}
+

@@ -1,0 +1,46 @@
+// Add up series of doubles read from keyboard
+//  Ask user each time if there are more values
+
+import java.util.Scanner;
+
+public class SumNumsYN
+{
+    public static void main(String [ ] args)
+    {
+        int count = 0;          // count values entered
+        double value;           // to hold each new value read
+        String more;            // user command
+        double sum = 0.0;
+        boolean done = false;   // to control input loop
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+       while (!done)
+        {
+            System.out.print("More values (yes or no)? ");
+            more = keyboard.nextLine();
+            more = more.trim();          // trim off spaces, etc.
+            more = more.toUpperCase();   // raise to upper case
+                
+            if (more.equals("NO"))   // string comparison, no ==
+            { 
+                done = true;
+            }
+            else if (more.equals("YES"))  // need to compare to upper case
+            {
+                System.out.print("Enter a value: ");
+                value = keyboard.nextDouble();
+                keyboard.nextLine();
+ 
+                sum = sum + value;         // add to previous sum
+                count = count + 1;         // increase count by 1
+            }
+            else  // user entered neither yes nor no
+            {
+                System.out.println("Please answer yes or no");
+            }
+        }
+        
+        System.out.println("The sum of " + count + " values is " + sum);
+    }
+}

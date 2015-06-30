@@ -1,0 +1,151 @@
+// Fourth version of Tree class
+//  Convert all data to one String, update Show mwethod,
+//  and read data from a text stream.
+
+import java.util.Scanner;  // to read from a text stream
+
+public class Tree
+{
+    private String name;      // common name
+    private String sciName;   // scientific name
+    private String family;    // common name of tree family
+
+    // regions of the U.S. in which this tree grows
+    private boolean regionA, regionB, regionC, regionD, regionE, regionF;
+
+    private int lowHeight, highHeight;   // height range in feet
+    private int shortLeaf, longLeaf;     // leaf length range in inches
+    private String bark;                 // bark description
+    private String crown;                // crown description
+    private String hardness;             // hardness of the wood: soft, medium, hard
+    private String environment;          // typical environment description
+
+    public Tree()
+    {
+        regionA = regionB = regionC = regionD = regionE = regionF = false;
+        lowHeight = highHeight = shortLeaf = longLeaf = -1;  // code for undefined dimension
+        name = sciName = family = bark = crown = hardness = environment = "Undefined";
+    }
+
+    public Tree(String regions)
+    {
+        setRegions(regions);
+    }
+
+    public void setRegions(String regions)
+    {
+        regionA = regionB = regionC = regionD = regionE = regionF = false;
+
+        // regions is e.g., "A fC "; if no region letters found then no regions true
+        regions = regions.toUpperCase();
+        regionA = regions.indexOf("A") >= 0;  // regionA true if "A" found
+        regionB = regions.indexOf("B") >= 0;
+        regionC = regions.indexOf("C") >= 0;
+        regionD = regions.indexOf("D") >= 0;
+        regionE = regions.indexOf("E") >= 0;
+        regionF = regions.indexOf("F") >= 0;        
+    }
+    
+    public void setName(String s) { name = s; }
+    public void setSciName(String s) { sciName = s; }
+    public void setFamily(String s) { family = s; }
+    public void setBark(String s) { bark = s; }
+    public void setCrown(String s) { crown = s; }
+    public void setHardness(String s) { hardness = s; }
+    public void setEnvironment(String s) { environment = s; }
+    public void setLowHeight(int i) { lowHeight = i; }
+    public void setHighHeight(int i) { highHeight = i; }
+    public void setShortLeaf(int i) { shortLeaf = i; }
+    public void setLongLeaf(int i) { longLeaf = i; }
+
+    public String getName() { return name; }
+    public String getSciName() { return sciName; }
+    public String getFamily() { return family; }
+    public String getBark() { return bark; }
+    public String getCrown() { return crown; }
+    public String getHardness() { return hardness; }
+    public String getEnvironment() { return environment; }
+    public int getLowHeight() { return lowHeight; }
+    public int getHighHeight() { return highHeight; }
+    public int getShortLeaf() { return shortLeaf; }
+    public int getLongLeaf() { return longLeaf; }
+
+    public String getRegions()   // name change from previous Tree versions
+    {
+        String r = "";
+        if (regionA) r = r + "A ";
+        if (regionB) r = r + "B ";        
+        if (regionC) r = r + "C ";
+        if (regionD) r = r + "D ";
+        if (regionE) r = r + "E ";        
+        if (regionF) r = r + "F";
+        return r.trim();              // remove trailing space if there is one
+    }
+
+    // Number of U.S. regions in which tree grows
+    public int numRegions()
+    {
+        int num = 0;
+        if (regionA) num++;
+        if (regionB) num++;        
+        if (regionC) num++;
+        if (regionD) num++;
+        if (regionE) num++;        
+        if (regionF) num++;
+        return num;
+    }
+    
+    // Read tree data from a text stream, each value on new line
+    public void readFromStream(Scanner in)
+    {
+        name = in.nextLine();
+        family = in.nextLine();
+        sciName = in.nextLine();
+        setRegions(in.nextLine());     // call method to convery String to booleans
+        shortLeaf = in.nextInt(); in.nextLine();
+        longLeaf = in.nextInt(); in.nextLine();
+        lowHeight = in.nextInt(); in.nextLine();
+        highHeight = in.nextInt(); in.nextLine();
+        bark = in.nextLine();
+        crown = in.nextLine();
+        hardness = in.nextLine();
+        environment = in.nextLine();
+    }
+
+    public String toString ()
+    {
+        String str = "";
+        str = str + name + "\n";          // value plus end-of-line
+        str = str + family + "\n";
+        str = str + sciName + "\n";
+        str = str + getRegions() + "\n";
+        str = str + shortLeaf + "\n";
+        str = str + longLeaf + "\n";
+        str = str + lowHeight + "\n";
+        str = str + highHeight + "\n";
+        str = str + bark + "\n";
+        str = str + crown + "\n";
+        str = str + hardness + "\n";
+        str = str + environment;
+        return str;
+    }
+    
+    // Display data fields with labels on screen
+    public void show ()
+    {
+        System.out.println("=======================");
+        System.out.println("Common name: " + name);
+        System.out.println("Family: " + family);
+        System.out.println("Scientific name: " + sciName);
+        System.out.println("Regions: " + getRegions());
+        System.out.println("Leaves are " + shortLeaf + " to " + 
+            longLeaf + " inches long");
+        System.out.println("Height is " + lowHeight + " to " + 
+            highHeight + " feet");
+        System.out.println("The bark is " + bark);            
+        System.out.println("The crown will appear " + crown);            
+        System.out.println("This tree's wood is " + hardness);
+        System.out.println("Its environment is " + environment);
+        System.out.println("=======================");
+    }
+}

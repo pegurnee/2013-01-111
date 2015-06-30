@@ -1,0 +1,53 @@
+// Read the count and the array values from file
+
+import java.util.Scanner;
+import java.io.*;
+
+public class Arrays3
+{
+  public static void main (String [ ] args)
+    {        
+      final int MAXGAMES = 25;   // assume can have no more than 25
+      
+      // create array to hold max no. values
+      int[ ] hitsByGame = new int[MAXGAMES];
+      int numGames;
+      
+      String fName = "hits.txt";  // file name
+
+      // Put all file operations and computing on data from file
+      //  inside "try"
+
+      try
+        { 
+            // scan input from file instead of keyboard
+            Scanner inStream = new Scanner(new FileInputStream(fName));
+            
+            numGames = inStream.nextInt();   // read count from file
+            
+            for (int j = 0; j < numGames; j++)
+              {
+                hitsByGame[j] = inStream.nextInt();  // from file
+              }
+             inStream.close();    // tidy up
+          
+            // display value in last position
+            System.out.println("Hits in last game: " + hitsByGame[numGames-1]);
+      
+            System.out.println("Number of hits for each game:");
+      
+            for (int k = 0; k < numGames; k++)
+              {
+                System.out.println((k+1) + ": " + hitsByGame[k]);
+              }
+        
+        }  // end of try
+      
+      catch (Exception e)  // if exception thrown from "try"
+        { 
+            System.out.println("Error in file operations.");
+            System.exit(0);    // terminate program
+        } 
+  
+    }
+}

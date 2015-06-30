@@ -1,0 +1,37 @@
+// test out the CoffeeCup class
+
+import java.util.Scanner;
+import java.io.*;            // for file operations
+
+public class TestCoffeeCup
+{
+    public static void main(String [ ] args)
+    {
+        String fName = "cupData.txt";
+
+        //Scanner keyboard = new Scanner(System.in);
+
+        CoffeeCup cup1 = new CoffeeCup();
+        CoffeeCup cup2 = new CoffeeCup();
+
+        try
+        {
+            Scanner inStream = new Scanner(new FileInputStream(fName));
+            cup1.readFromStream(inStream);
+            cup2.readFromStream(inStream);
+            inStream.close();
+        }
+        catch (Exception e)  
+        { 
+            System.out.println("Error in file operations.");
+            System.exit(0);   
+        }
+
+        cup1.show();
+        cup2.show();
+
+        System.out.println("\n------- Testing 'toString' method:");
+        System.out.println(cup1.toString());
+    }
+}
+

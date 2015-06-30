@@ -1,0 +1,38 @@
+// Decode string by shifting character codes a set amount back
+
+import java.util.Scanner;
+
+public class DecodeString
+{
+    public static void main(String [ ] args)
+    {
+        String userString;
+        String decodedString;  // String after decoding
+        int stringLen;         // length of user's input String
+        char c;                // to hold each char from String in succession
+        char shift;            // amount to shift character codes
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("Enter a text String to decode: ");
+        userString = keyboard.nextLine();
+        
+        System.out.print("Enter amount to shift back: ");
+        shift = (char) keyboard.nextInt();            // get int, cast as char
+        keyboard.nextLine();
+
+        stringLen = userString.length();    // get length of user's String
+        decodedString = "";                 // initialize as empty String
+               
+        for (int j = 0; j < stringLen; j++)
+        {
+            c = userString.charAt(j);   // extract char at current position
+            
+            c = (char) (c - shift);     // subtract shift, force to be char
+            
+            decodedString = decodedString + c;   // glue shifted char to result
+        }
+        
+        System.out.println("Decoded: " + decodedString);
+    }
+}

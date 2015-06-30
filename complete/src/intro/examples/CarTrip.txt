@@ -1,0 +1,52 @@
+public class CarTrip
+{
+    public String start;
+    public String destination;
+    public double numMiles;
+    public double gallonsGas;
+    public int numDays;
+    public double hotelExpense;
+    public double foodExpense;
+
+    public double mpg()
+    {
+        return numMiles / gallonsGas;
+    }
+
+    public double milesPerDay ()
+    {
+        return numMiles / numDays;
+    }
+
+    public double hotelPerDay ()
+    {
+        return hotelExpense / numDays;
+    }
+
+    public double foodPerDay ()
+    {
+        return foodExpense / numDays;
+    }
+
+    public double foodLodgingExpense ()
+    {
+        return foodExpense + hotelExpense;
+    }
+
+    // total cost: food + hotel + gas * assumed gas price
+    public double totalExpense (double priceGallon)
+    {
+        return foodLodgingExpense() + gallonsGas * priceGallon;
+    }    
+    
+    public void showCarTrip ()
+    {
+        System.out.println("Starting from " + start);
+        System.out.println("Terminating at " + destination);
+        System.out.println("Number of days: " + numDays);
+        System.out.println("Number of miles: " + numMiles);
+        System.out.println("Gallons of gasoline: " + gallonsGas);
+        System.out.println("Hotel expense: " + hotelExpense);
+        System.out.println("Food expense: " + foodExpense);
+    }
+}

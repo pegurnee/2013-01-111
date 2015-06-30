@@ -1,0 +1,16 @@
+// Loop to display a set number of greetings
+
+public class Loop1
+{
+    public static void main(String [ ] args)
+    {
+        int count = 0;                 // counter for loop
+        int numGreetingsDesired = 4;   // limit on loop count
+        
+        while (count < numGreetingsDesired)   // body executes if this is true
+        {
+            System.out.println("Howdy, pardner!");
+            count = count + 1;         // increase count by 1
+        }
+    }
+}

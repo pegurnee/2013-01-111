@@ -1,0 +1,20 @@
+// for loop to display a set number of greetings
+
+public class LoopFor
+{
+    public static void main(String [ ] args)
+    {
+        int numGreetingsDesired = 4;   // limit on loop count
+        
+        // for count equals 1 through numGreetingsDesired, display greeting
+        
+        for (int count = 1; count <= numGreetingsDesired; count = count + 1)
+        {
+            System.out.println("Howdy, pardner!");
+        }
+    }
+}
+
+// Note that instead of "count = count + 1", we can just write "count++"
+// Then the for loop starts with this:
+//    for (int count = 1; count <= numGreetingsDesired; count++)

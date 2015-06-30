@@ -1,0 +1,51 @@
+// A simple Coffee Cup example to show toString and reading from file
+
+import java.util.Scanner;  // to read from a text stream
+
+public class CoffeeCup
+{
+    public String style;   // Mug, Espresso, or Fine
+    public int capacity;   // in ounces
+    public String logo;    // Description of logo
+    public double price;   // price in dollars each
+
+    public CoffeeCup()   // defaults set for most common cup
+    {
+        style = "Mug";
+        capacity = 10;
+        logo = "Swoop";
+        price = 9.0;
+    }
+
+    // Read data from a text stream, each value on new line
+    //  If last data item (price) on line with no new-line chars, then
+    //  error in reading file
+    public void readFromStream(Scanner in)
+    {
+        style = in.nextLine();
+        capacity = in.nextInt(); in.nextLine();
+        logo = in.nextLine();
+        price = in.nextDouble(); in.nextLine();  // must have last end-of-line
+    }
+
+    public String toString ()
+    {
+        String str = "";
+        str = str + style + "\n";        // value plus end-of-line
+        str = str + capacity + "\n";
+        str = str + logo + "\n";
+        str = str + price + "\n";
+        return str;
+    }
+
+    // Display data fields with labels on screen
+    public void show ()
+    {
+        System.out.println("=======================");
+        System.out.println("Style: " + style);
+        System.out.println("Capacity: " + capacity + " ounces");
+        System.out.println("Logo: " + logo);
+        System.out.println("Price: $" + price);
+        System.out.println("=======================");
+    }
+}

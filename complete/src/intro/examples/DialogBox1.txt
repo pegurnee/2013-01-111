@@ -1,0 +1,28 @@
+// Dialog boxes: messages to user
+
+import javax.swing.*;     // user interface elements
+
+public class DialogBox1
+{
+    public static void main(String [ ] args)
+    {
+        JOptionPane.showMessageDialog
+        (null,                                              // default frame
+            "This is how an info message looks in BlueJ.",  // main message
+            "Pay Attention",                                // title
+            JOptionPane.INFORMATION_MESSAGE);               // kind of msg
+
+        JOptionPane.showMessageDialog
+        (null,
+            "Danger, Will Robinson!",
+            "Danger, Danger!",
+            JOptionPane.WARNING_MESSAGE);
+
+        JOptionPane.showMessageDialog
+        (null,
+            "Oh, how could you be so wayward?",
+            "Your Bad",
+            JOptionPane.ERROR_MESSAGE);      
+
+    }
+}
